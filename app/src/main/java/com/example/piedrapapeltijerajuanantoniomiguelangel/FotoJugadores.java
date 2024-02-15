@@ -29,6 +29,8 @@ public class FotoJugadores extends AppCompatActivity {
     MediaRecorder recorder;
     ImageView imagenJ1;
     ImageView imagenJ2;
+    Bitmap imgBitmap;
+    Bitmap imgBitmap2;
     Bundle extras;
     ActivityResultLauncher<Intent> launcherJ1,launcherJ2;
     private final int REQUEST_CODE_PERMISSIONS = 1000;
@@ -48,7 +50,7 @@ public class FotoJugadores extends AppCompatActivity {
                         if(o.getResultCode() == RESULT_OK){
                             Intent data = o.getData();
                             Bundle extras = data.getExtras();
-                            Bitmap imgBitmap = (Bitmap) extras.get("data");
+                            imgBitmap = (Bitmap) extras.get("data");
                             imagenJ1.setImageBitmap(imgBitmap);
                         }
                     }
@@ -62,8 +64,8 @@ public class FotoJugadores extends AppCompatActivity {
                     public void onActivityResult(ActivityResult o) {
                         if(o.getResultCode() == RESULT_OK){
                             Intent data = o.getData();
-                            extras = data.getExtras();
-                            Bitmap imgBitmap = (Bitmap) extras.get("data");
+                            Bundle extras = data.getExtras();
+                            imgBitmap2 = (Bitmap) extras.get("data");
                             imagenJ2.setImageBitmap(imgBitmap);
                         }
                     }
@@ -109,7 +111,8 @@ public class FotoJugadores extends AppCompatActivity {
 
     public void irBatalla(View view) {
         Intent i = new Intent(getApplicationContext(), CampoBatalla.class);
-        i.putExtra("img", extras);
+        i.putExtra("img2",imgBitmap2);
+        i.putExtra("img",imgBitmap);
         startActivity(i);
     }
 
