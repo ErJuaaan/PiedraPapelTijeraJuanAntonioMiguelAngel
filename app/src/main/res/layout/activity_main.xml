@@ -9,14 +9,32 @@
 
     <Button
         android:id="@+id/buttonIniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="88dp"
+        android:layout_height="94dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/play"
         android:onClick="empezarJuego"
-        android:text="Iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.574" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="218dp"
+        android:layout_height="213dp"
+        android:text="BIENVENID@ A............... PIEDRA PAPEL TIJERA"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
 </androidx.constraintlayout.widget.ConstraintLayout>

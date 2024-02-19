@@ -26,6 +26,7 @@ public class CampoBatalla extends AppCompatActivity {
     TextView marcadorJ1;
     TextView marcadorJ2;
     MediaPlayer media;
+    MediaPlayer media2;
     Button piedra;
     Button papel;
     Button tijera;
@@ -78,6 +79,11 @@ public class CampoBatalla extends AppCompatActivity {
         int marcador1 = Integer.parseInt(marcadorJ1.getText().toString());
         int marcador2 = Integer.parseInt(marcadorJ2.getText().toString());
         if(marcador1>=3 || marcador2>=3){
+            if(marcador1>=3){
+                playmedia();
+            }else if(marcador2>=3){
+                playderrota();
+            }
             playmedia();
             piedra.setVisibility(View.INVISIBLE);
             papel.setVisibility(View.INVISIBLE);
@@ -111,7 +117,11 @@ public class CampoBatalla extends AppCompatActivity {
         int marcador1 = Integer.parseInt(marcadorJ1.getText().toString());
         int marcador2 = Integer.parseInt(marcadorJ2.getText().toString());
         if(marcador1>=3 || marcador2>=3){
-            playmedia();
+            if(marcador1>=3){
+                playmedia();
+            }else if(marcador2>=3){
+                playderrota();
+            }
             piedra.setVisibility(View.INVISIBLE);
             papel.setVisibility(View.INVISIBLE);
             tijera.setVisibility(View.INVISIBLE);
@@ -144,7 +154,11 @@ public class CampoBatalla extends AppCompatActivity {
         int marcador1 = Integer.parseInt(marcadorJ1.getText().toString());
         int marcador2 = Integer.parseInt(marcadorJ2.getText().toString());
         if(marcador1>=3 || marcador2>=3){
-            playmedia();
+            if(marcador1>=3){
+                playmedia();
+            }else if(marcador2>=3){
+                playderrota();
+            }
             piedra.setVisibility(View.INVISIBLE);
             papel.setVisibility(View.INVISIBLE);
             tijera.setVisibility(View.INVISIBLE);
@@ -194,6 +208,15 @@ public class CampoBatalla extends AppCompatActivity {
 
         if(!media.isPlaying()){
             media.start();
+        }
+    }
+    public void playderrota() {
+        if(media2==null){
+            media2 = MediaPlayer.create(this,R.raw.derrota);
+        }
+
+        if(!media2.isPlaying()){
+            media2.start();
         }
     }
 

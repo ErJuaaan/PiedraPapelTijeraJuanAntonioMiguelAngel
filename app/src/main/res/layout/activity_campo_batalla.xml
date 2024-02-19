@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageCombateJ1"
-        android:layout_width="160dp"
-        android:layout_height="102dp"
+        android:layout_width="233dp"
+        android:layout_height="126dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +19,11 @@
 
     <Button
         android:id="@+id/buttonTijeraJ1"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="98dp"
         android:layout_height="65dp"
+        android:background="#050505"
+        android:backgroundTint="#0C0C0C"
         android:onClick="sacarTijera"
         android:text="Tijera"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,10 +31,11 @@
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.759" />
 
     <Button
         android:id="@+id/buttonPapelJ1"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="106dp"
         android:layout_height="65dp"
         android:onClick="sacarPapel"
@@ -41,20 +45,21 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.759" />
 
     <Button
         android:id="@+id/buttonPiedraJ1"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="102dp"
         android:layout_height="67dp"
         android:onClick="sacarPiedra"
         android:text="Piedra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <ImageView
         android:id="@+id/respuestaJ1"
@@ -147,4 +152,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="198dp"
+        android:layout_height="49dp"
+        android:text="MARCADOR"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,9 +9,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jugador 1"
+        android:layout_width="154dp"
+        android:layout_height="66dp"
+        android:text="Jugador "
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,8 +34,10 @@
 
     <Button
         android:id="@+id/buttonJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="134dp"
+        android:layout_height="117dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/foto"
         android:onClick="hacerFotoJ1"
         android:text="Foto"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,14 +45,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.701" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/play"
         android:onClick="irBatalla"
-        android:text="Ir a la batalla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
