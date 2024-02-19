@@ -40,7 +40,6 @@ public class FotoJugadores extends AppCompatActivity {
         setContentView(R.layout.activity_foto_jugadores);
         MediaController mController = new MediaController(this);
         imagenJ1 = findViewById(R.id.imageViewJ1);
-        imagenJ2 = findViewById(R.id.imageViewJ2);
 
         launcherJ1 = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),

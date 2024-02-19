@@ -44,11 +44,6 @@ public class CampoBatalla extends AppCompatActivity {
         Bundle b = data.getExtras();
         Bitmap imgBitmap = (Bitmap) b.get("img");
         imagenJ1.setImageBitmap(imgBitmap);
-        imagenJ2 = findViewById(R.id.imageCombateJ2);
-        Intent data2 = getIntent();
-        Bundle b2 = data.getExtras();
-        Bitmap imgBitmap2 = (Bitmap) b2.get("img2");
-        imagenJ1.setImageBitmap(imgBitmap);
         sacaJ1 = findViewById(R.id.respuestaJ1);
         sacaJ2 = findViewById(R.id.respuestaj2);
         marcadorJ1 = findViewById(R.id.resJ1);
