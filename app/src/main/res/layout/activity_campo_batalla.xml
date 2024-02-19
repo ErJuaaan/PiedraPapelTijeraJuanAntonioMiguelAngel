@@ -8,19 +8,9 @@
     tools:context=".CampoBatalla">
 
     <ImageView
-        android:id="@+id/imageCombateJ2"
-        android:layout_width="89dp"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
-
-    <ImageView
         android:id="@+id/imageCombateJ1"
-        android:layout_width="89dp"
-        android:layout_height="75dp"
+        android:layout_width="160dp"
+        android:layout_height="102dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,21 +19,21 @@
 
     <Button
         android:id="@+id/buttonTijeraJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="65dp"
         android:onClick="sacarTijera"
         android:text="Tijera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.807" />
 
     <Button
         android:id="@+id/buttonPapelJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="65dp"
         android:onClick="sacarPapel"
         android:text="Papel"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,20 +41,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.807" />
 
     <Button
         android:id="@+id/buttonPiedraJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="67dp"
         android:onClick="sacarPiedra"
         android:text="Piedra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.812" />
 
     <ImageView
         android:id="@+id/respuestaJ1"
